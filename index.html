@@ -1,12 +1,98 @@
-<!DOCTYPE>
-<HTML>
-  <head>
-    <h1>Hello</h1>
-  </head>
-  <body>
-    <p>
-      This is a para
-    </p>
-  </body>
-</HTML>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Battle Bots - Live Score</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
 
+  <div class="container">
+
+    <!-- Header -->
+    <header class="header">
+      <h1>
+        <span class="target">◎</span>
+        Battle Bots
+        <span class="target">◎</span>
+      </h1>
+      <p>Long-Distance Combat Status</p>
+    </header>
+
+    <!-- Status Cards -->
+    <div class="status-row">
+      <div class="status-card">
+        <div class="icon lightning">⚡</div>
+        <div>
+          <p class="label">Battle Status</p>
+          <h2 class="live">LIVE</h2>
+        </div>
+      </div>
+
+      <div class="status-card">
+        <div class="icon trophy">🏆</div>
+        <div>
+          <p class="label">Round</p>
+          <h2>3 of 5</h2>
+        </div>
+      </div>
+    </div>
+
+    <!-- Bots -->
+    <div class="bots">
+
+      <!-- Range Bot -->
+      <div class="bot-card">
+        <div class="bot-header">
+          <img src="https://i.imgur.com/8Km9tLL.png" alt="Range Bot">
+          <h3>Range Bot <span class="aim">🎯</span></h3>
+        </div>
+
+        <div class="stat">
+          <span>Health Points</span>
+          <span>850/1000</span>
+        </div>
+
+        <div class="progress-bar">
+          <div class="progress green" style="width:85%"></div>
+        </div>
+
+        <div class="ability ready">
+          <span>✨ Precision Strike</span>
+          <span class="badge">READY!</span>
+        </div>
+      </div>
+
+      <!-- Tank Bot -->
+      <div class="bot-card">
+        <div class="bot-header">
+          <img src="https://i.imgur.com/Qr71crq.png" alt="Tank Bot">
+          <h3>Tank Bot <span class="aim">🎯</span></h3>
+        </div>
+
+        <div class="stat">
+          <span>Health Points</span>
+          <span>720/1000</span>
+        </div>
+
+        <div class="progress-bar">
+          <div class="progress green" style="width:72%"></div>
+        </div>
+
+        <div class="ability cooldown">
+          <span>✨ Shield Fortress</span>
+          <span class="timer">⏱ 12s</span>
+        </div>
+
+        <div class="progress-bar small">
+          <div class="progress purple" style="width:60%"></div>
+        </div>
+      </div>
+
+    </div>
+
+  </div>
+
+</body>
+</html>
